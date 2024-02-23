@@ -13,7 +13,6 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ["import", 'react-refresh',],
-  // include: ["src/**/*.ts", "src/**/*.js", "test/**/*.ts"],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -30,16 +29,11 @@ module.exports = {
       "typescript": {
         "alwaysTryTypes": true,
         "project": "./tsconfig.json",
-        // "alias": {
-        //   "map": [
-        //     ["@components", "./src/components"],
-        //     ["@pages", "./src/pages"],
-        //     ["@data", "./src/data"],
-        //     ["@assets", "./src/assets"],
-        //     ["@ctx", "./src/contexts"],
-        //     ["@", "./src"]
-        //   ]
-        // }
+        "alias": {
+          "map": [
+            ["@", "./src"],
+            ["@components", "./src/components"],
+          ]}
       }
     }
   }
