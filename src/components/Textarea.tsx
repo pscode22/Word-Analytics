@@ -33,7 +33,7 @@ export default function Textarea({ setStats }: { setStats: Dispatch<SetStateActi
 
   return (
     <div className="textarea">
-      <textarea value={text} onChange={handleChange} placeholder="Enter your text" spellCheck={false} />
+      <textarea value={text} onChange={handleChange} placeholder="Enter your text" spellCheck="false" />
       <Warning warningText={warningText} />
     </div>
   );
