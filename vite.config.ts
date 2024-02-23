@@ -6,6 +6,7 @@ import path from 'node:path';
 // https://vitejs.dev/config/
 export default defineConfig({
   server: { port: 3020 },
+  base: '/Word-Analytics',
   plugins: [react(), mkcert()],
   build: {
     chunkSizeWarningLimit: 1024,
